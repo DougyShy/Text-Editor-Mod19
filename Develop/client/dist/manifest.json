@@ -1,0 +1,8 @@
+{
+  "name": "Text Editor",
+  "short_name": "JATE",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./",
+  "description": "Just Another Text Editor"
+}
