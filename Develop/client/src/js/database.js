@@ -34,7 +34,7 @@ export const putDb = async (content) => {
   }*/
 
   console.log(data);
-  const request = store.put(data);
+  const request = store.put({'id': 1, 'content': data});
 
   // Get confirmation of the request.
   const result = await request;
