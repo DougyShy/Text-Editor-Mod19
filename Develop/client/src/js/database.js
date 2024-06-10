@@ -28,11 +28,6 @@ export const putDb = async (content) => {
   // Use the .put() method to update content in db
   const data = { content };
 
-  // Ensure the data object does not have the 'id' property if using autoIncrement
-  /*if ('id' in data) {
-    delete data.id;
-  }*/
-
   console.log(data);
   const request = store.put({'id': 1, 'content': data});
 
@@ -45,7 +40,7 @@ export const putDb = async (content) => {
 // TODO: Add logic for a method that gets all the content from the database
 // Export a function we will use to GET to the database.
 export const getDb = async () => {
-  console.log('GET from the database');
+  console.log('GET save TO the database');
 
   // Create a connection to the database database and version we want to use.
   const contactDb = await openDB('jate', 1);
@@ -66,4 +61,4 @@ export const getDb = async () => {
 };
 
 // Start the database
-const result = await initdb();
+initdb();
