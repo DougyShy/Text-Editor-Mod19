@@ -17,7 +17,7 @@ Social Network API Basics
 
 ## Installation
 
-No installation is necessary for this project. Dependencies are listed below.
+Any installation should be available via the PWA 'Install' option. Dependencies are listed below.
 
   - express
   - PWA dependencies like webpack and babel for dev
